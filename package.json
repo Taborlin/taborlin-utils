@@ -1,0 +1,30 @@
+{
+  "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
+  "name": "topdocutils",
+  "description": "Small utility functions used by Topdoc and Topdoc Parse",
+  "version": "0.0.1",
+  "repository": "git@github.com:topcoat/topdocutils.git",
+  "keywords": [
+    "utils"
+  ],
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "main": "./topdocutils",
+  "preferGlobal": "true",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter dot --require should"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.11.0",
+    "should": "~1.2.2"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
