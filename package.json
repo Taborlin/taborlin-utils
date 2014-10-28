@@ -13,8 +13,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   ],
-  "main": "./topdocutils",
-  "preferGlobal": "true",
+  "main": "./topdoc-utils",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter dot --require should"
   },
