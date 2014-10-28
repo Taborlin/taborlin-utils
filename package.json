@@ -3,7 +3,7 @@
   "name": "topdoc-utils",
   "description": "Small utility functions used by Topdoc and Topdoc Parse",
   "version": "0.0.1",
-  "repository": "git@github.com:topcoat/topdocutils.git",
+  "repository": "git@github.com:topcoat/topdoc-utils.git",
   "keywords": [
     "utils"
   ],

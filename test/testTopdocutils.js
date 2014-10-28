@@ -18,7 +18,7 @@
 
 "use strict";
 
-var TopdocUtils = require('../topdocutils');
+var TopdocUtils = require('../topdoc-utils');
 
 describe('TopdocUtils', function() {
   var topdocutils = new TopdocUtils();
