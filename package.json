@@ -2,7 +2,7 @@
   "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
   "name": "topdoc-utils",
   "description": "Small utility functions used by Topdoc and Topdoc Parse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "git@github.com:topcoat/topdoc-utils.git",
   "keywords": [
     "utils"
@@ -17,8 +17,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter dot --require should"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "~1.11.0",
     "should": "~1.2.2"
