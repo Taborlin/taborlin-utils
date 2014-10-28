@@ -1,6 +1,6 @@
 {
   "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
-  "name": "topdocutils",
+  "name": "topdoc-utils",
   "description": "Small utility functions used by Topdoc and Topdoc Parse",
   "version": "0.0.1",
   "repository": "git@github.com:topcoat/topdocutils.git",
