@@ -15,8 +15,8 @@
  * limitations under the License.
  *
  */
-topdocutils = {
-  slugify: function(title) {
+TopdocUtils = function () {
+  TopdocUtils.prototype.slugify = function(title) {
     var nonWordRegex, slug, spaceRegex;
     slug = title.toLowerCase();
     spaceRegex = /\s/g;
@@ -24,8 +24,8 @@ topdocutils = {
     nonWordRegex = /([^\w-]+)/;
     slug = slug.replace(nonWordRegex, "");
     return slug;
-  },
-  titlify: function(slug) {
+  };
+  TopdocUtils.prototype.titlify = function(slug) {
     var title;
     title = slug.replace(/-/g, ' ');
     if (title.indexOf('.css') === title.length - 4) {
@@ -35,7 +35,7 @@ topdocutils = {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
     return title;
-  }
+  };
 }
 
-module.exports = topdocutils;
+module.exports = TopdocUtils;
