@@ -21,20 +21,14 @@
 var TopdocUtils = require('../topdoc-utils');
 
 describe('TopdocUtils', function() {
-  var topdocutils = new TopdocUtils();
-  it('exists', function() {
-    TopdocUtils.should.be.ok;
-    topdocutils = new TopdocUtils();
-    topdocutils.should.be.instanceOf(TopdocUtils);
-  });
   it('slugifies', function() {
     var title = "This is a title";
     var expectedSlug = "this-is-a-title";
-    topdocutils.slugify(title).should.equal(expectedSlug);
+    TopdocUtils.slugify(title).should.equal(expectedSlug);
   });
   it('titlifies', function() {
     var slug = "yo-dawg-i-am-a-slug";
     var expectedTitle = "Yo Dawg I Am A Slug";
-    topdocutils.titlify(slug).should.equal(expectedTitle);
+    TopdocUtils.titlify(slug).should.equal(expectedTitle);
   });
 });
