@@ -2,7 +2,7 @@
   "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
   "name": "topdoc-utils",
   "description": "Small utility functions used by Topdoc and Topdoc Parse",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "git@github.com:topcoat/topdoc-utils.git",
   "keywords": [
     "utils"
