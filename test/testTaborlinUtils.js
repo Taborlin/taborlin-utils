@@ -18,17 +18,17 @@
 
 "use strict";
 
-var TopdocUtils = require('../topdoc-utils');
+var TaborlinUtils = require('../taborlin-utils');
 
-describe('TopdocUtils', function() {
+describe('TaborlinUtils', function() {
   it('slugifies', function() {
     var title = "This is a title";
     var expectedSlug = "this-is-a-title";
-    TopdocUtils.slugify(title).should.equal(expectedSlug);
+    TaborlinUtils.slugify(title).should.equal(expectedSlug);
   });
   it('titlifies', function() {
     var slug = "yo-dawg-i-am-a-slug";
     var expectedTitle = "Yo Dawg I Am A Slug";
-    TopdocUtils.titlify(slug).should.equal(expectedTitle);
+    TaborlinUtils.titlify(slug).should.equal(expectedTitle);
   });
 });
