@@ -1,9 +1,9 @@
 {
   "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
-  "name": "topdoc-utils",
-  "description": "Small utility functions used by Topdoc and Topdoc Parse",
+  "name": "taborlin-utils",
+  "description": "Small utility functions used by Taborlin and Taborlin Parse",
   "version": "0.0.4",
-  "repository": "git@github.com:topcoat/topdoc-utils.git",
+  "repository": "git@github.com:topcoat/taborlin-utils.git",
   "keywords": [
     "utils"
   ],
@@ -13,7 +13,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   ],
-  "main": "./topdoc-utils",
+  "main": "./taborlin-utils",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter dot --require should"
   },
