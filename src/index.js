@@ -53,10 +53,15 @@ export default {
    *
    *  * `propertNames` {Array} of property name {String}s.
    *  * `obj` {Object} that might contain the properties.
+   *  * `all` (optional) {Boolean} check if all property names are defined. Defaults to true.
    *
-   *  Returns {Boolean} `true` if it has all of the properties; `false` if it contains some or none.
+   *  Returns {Boolean} representing if object has all or some of the properties,
+   *  depending on `all` param.
    */
-  hasOwnProperties(propertNames, obj) {
-    return propertNames.every(prop => Object.hasOwnProperty.call(obj, prop));
+  hasOwnProperties(propertNames, obj, all = true) {
+    if (all) {
+      return propertNames.every(prop => Object.hasOwnProperty.call(obj, prop));
+    }
+    return propertNames.some(prop => Object.hasOwnProperty.call(obj, prop));
   },
 };

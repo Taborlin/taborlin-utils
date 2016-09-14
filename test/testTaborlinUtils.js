@@ -30,3 +30,9 @@ test('hasOwnProperties returns false if it has some properties', t => {
   const props = ['prop1', 'prop3'];
   t.false(utils.hasOwnProperties(props, obj));
 });
+
+test('hasOwnProperties returns true if it has some properties and all is false', t => {
+  const obj = { prop1: true, prop2: false };
+  const props = ['prop1', 'prop3'];
+  t.true(utils.hasOwnProperties(props, obj, false));
+});
