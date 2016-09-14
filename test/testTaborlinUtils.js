@@ -18,3 +18,15 @@ test('titlifies with file extension', t => {
   const expectedTitle = 'This Is A Button';
   t.is(utils.titlify(slug), expectedTitle);
 });
+
+test('hasOwnProperties returns true if it has all properties', t => {
+  const obj = { prop1: true, prop2: false };
+  const props = ['prop1', 'prop2'];
+  t.true(utils.hasOwnProperties(props, obj));
+});
+
+test('hasOwnProperties returns false if it has some properties', t => {
+  const obj = { prop1: true, prop2: false };
+  const props = ['prop1', 'prop3'];
+  t.false(utils.hasOwnProperties(props, obj));
+});

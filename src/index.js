@@ -48,4 +48,15 @@ export default {
     );
     return title;
   },
+  /**
+   *  Public: checks if obj has a list (array) of properties
+   *
+   *  * `propertNames` {Array} of property name {String}s.
+   *  * `obj` {Object} that might contain the properties.
+   *
+   *  Returns {Boolean} `true` if it has all of the properties; `false` if it contains some or none.
+   */
+  hasOwnProperties(propertNames, obj) {
+    return propertNames.every(prop => Object.hasOwnProperty.call(obj, prop));
+  },
 };
